@@ -1,13 +1,13 @@
 
 NAME=		threads_bash
-CC=			g++
-RM=			rm -rvf
+CC=		g++
+RM=		rm -rvf
 
 SRCS=		main.cpp
 
 OBJS=		$(SRCS:.cpp=.o)
 
-CXXFLAGS=	-W -Wall -Wextra -Wshadow
+CXXFLAGS=	-W -Wall -Wextra -Wshadow --ansi --pedantic
 LDFLAGS=
 
 all:		$(NAME)
